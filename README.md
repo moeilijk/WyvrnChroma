@@ -23,6 +23,11 @@ and plays the matching `.chroma` itself.
 - Phase A (this library) complete: parser, player, catalog acquisition, `wyvrn.config`, public API — all tested.
 - Phase B (the Aurora integration that consumes this library) lives in the [`wyvrn-chroma-292` branch of the Aurora fork](https://github.com/moeilijk/Aurora/tree/wyvrn-chroma-292), tracking [Aurora issue #292](https://github.com/Aurora-RGB/Aurora/issues/292).
 
+## Install
+```bash
+dotnet add package WyvrnChroma
+```
+
 ## Build & test
 ```bash
 dotnet build -c Release
