@@ -1,9 +1,21 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <PackageId>WyvrnChroma</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>cvdveer</Authors>
+    <Description>Parser/player for Razer ChromaAnimation (.chroma) effects and the Wyvrn haptic-folder catalog — standalone: no Synapse, no Chroma services, no runtime cloud dependency. Built for Aurora issue #292.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/moeilijk/WyvrnChroma</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/moeilijk/WyvrnChroma</RepositoryUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="/" />
+  </ItemGroup>
 
 </Project>
