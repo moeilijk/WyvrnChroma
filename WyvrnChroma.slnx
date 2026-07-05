@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/WyvrnChroma/WyvrnChroma.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/WyvrnChroma.Tests/WyvrnChroma.Tests.csproj" />
+  </Folder>
+</Solution>
