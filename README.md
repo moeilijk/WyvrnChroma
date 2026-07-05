@@ -5,7 +5,7 @@ A small, standalone .NET library to read and play **Razer ChromaAnimation (`.chr
 RGB lighting — **without Synapse, without the Razer Chroma services, and without any cloud dependency at
 runtime**.
 
-It exists so [Aurora](https://github.com/Aurora-RGB/Aurora) (issue #292) can react to `SetEventName` games
+It exists so [Aurora](https://github.com/Aurora-RGB/Aurora) (issue [#292](https://github.com/Aurora-RGB/Aurora/issues/292)) can react to `SetEventName` games
 on non-Razer hardware: Aurora reads the live event stream, looks up the event in the local `wyvrn.config`,
 and plays the matching `.chroma` itself.
 
@@ -21,7 +21,7 @@ and plays the matching `.chroma` itself.
 
 ## Status
 - Phase A (this library) complete: parser, player, catalog acquisition, `wyvrn.config`, public API — all tested.
-- Phase B (the Aurora integration that consumes this library) lives in the Aurora fork (issue #292).
+- Phase B (the Aurora integration that consumes this library) lives in the [`wyvrn-chroma-292` branch of the Aurora fork](https://github.com/moeilijk/Aurora/tree/wyvrn-chroma-292), tracking [Aurora issue #292](https://github.com/Aurora-RGB/Aurora/issues/292).
 
 ## Build & test
 ```bash
@@ -34,3 +34,6 @@ Targets `net10.0` (matches the Aurora consumer; cross-platform — no Windows AP
 This library only **parses/plays data files**; it does not bundle or redistribute any Razer content. The
 catalog of `.chroma`/`wyvrn.config` files is Razer/Wyvrn content, obtained at the user's machine either from
 an existing local install or from Razer's own public CDN.
+
+## License
+[MIT](LICENSE).
